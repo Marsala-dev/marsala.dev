@@ -276,6 +276,45 @@ export function Footer() {
         </div>
       </div>
 
+      {/* Take a Break — Arcade CTA */}
+      <div className="border-t border-white/10 dark:border-slate-800">
+        <div className="mx-auto flex w-full max-w-7xl flex-col items-center gap-4 px-8 py-6 lg:px-12">
+          <a
+            href="https://games.marsala.dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex items-center gap-3 text-sm font-medium text-white/60 transition-all duration-300 hover:text-yellow-300"
+          >
+            <span className="text-lg transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110">
+              🎮
+            </span>
+            <span>Take a Break</span>
+            <span className="text-xs text-white/30 group-hover:text-yellow-400/50">
+              — play retro games
+            </span>
+          </a>
+          <div className="flex flex-wrap items-center justify-center gap-3">
+            {[
+              { href: "https://games.marsala.dev/chess/", label: "Chess", icon: "♚" },
+              { href: "https://games.marsala.dev/pacman/", label: "Pac-Man", icon: "ᗧ" },
+              { href: "https://games.marsala.dev/prince/", label: "Prince of Persia", icon: "⚔" },
+              { href: "https://games.marsala.dev/mario/", label: "Super Mario", icon: "🍄" },
+            ].map((game) => (
+              <a
+                key={game.label}
+                href={game.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 rounded-full border border-white/8 bg-white/3 px-3 py-1.5 text-xs text-white/40 transition-all duration-200 hover:border-white/20 hover:bg-white/8 hover:text-white/80"
+              >
+                <span>{game.icon}</span>
+                <span>{game.label}</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+
       {/* Bottom Bar - Clean Styling */}
       <div className="border-t border-white/20 dark:border-slate-700">
         <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-between gap-4 px-8 py-6 sm:flex-row lg:px-12">
