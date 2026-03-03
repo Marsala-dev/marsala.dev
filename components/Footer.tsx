@@ -299,6 +299,7 @@ export function Footer() {
               { href: "https://games.marsala.dev/pacman/", label: "Pac-Man", icon: "ᗧ" },
               { href: "https://games.marsala.dev/prince/", label: "Prince of Persia", icon: "⚔" },
               { href: "https://games.marsala.dev/mario/", label: "Super Mario", icon: "🍄" },
+              { href: "https://games.marsala.dev/snake/", label: "Snake", icon: "🐍" },
             ].map((game) => (
               <a
                 key={game.label}
