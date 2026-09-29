@@ -35,3 +35,6 @@ next-env.d.ts
 
 # Local Netlify folder
 .netlify
+
+# local dev logs
+*.log
