@@ -35,3 +35,6 @@ next-env.d.ts
 
 # Local Netlify folder
 .netlify
+
+# QA 2026-09-29: per-user Claude Code settings
+.claude/settings.local.json
